@@ -17,7 +17,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Pedido {
+public class Pedido extends BaseEntidad {
     private Estado estado;
     private Date fecha;
     private TipoDeEnvio tipoDeEnvio;

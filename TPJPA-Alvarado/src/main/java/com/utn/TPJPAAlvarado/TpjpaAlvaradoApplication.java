@@ -25,8 +25,6 @@ public class TpjpaAlvaradoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TpjpaAlvaradoApplication.class, args);
 	}
-	SpringApplication.run(TpjpaAlvaradoApplication.class, args);
-}
 
 	@Bean
 	public CommandLineRunner init() {
@@ -132,7 +130,7 @@ public class TpjpaAlvaradoApplication {
 			clienteRepository.save(cliente1); // Guarda los datos de Cliente
 			Rubro rubroRecuperado = rubroRepository.findById(rubro1.getId()).orElse(null); // Recupera al objeto Rubro desde la base de datos
 			if (rubroRecuperado != null){
-				System.out.println("Denominacion: " + rubroRecuperado.getDenominacion());
+				System.out.println("Denominación: " + rubroRecuperado.getDenominacion());
 				rubroRecuperado.mostrarProductos();
 			}
 			// Recupera el objeto Cliente desde la base de datos
@@ -141,12 +139,13 @@ public class TpjpaAlvaradoApplication {
 				System.out.println("Nombre: " + clienteRecuperado.getNombre());
 				System.out.println("Apellido: " + clienteRecuperado.getApellido());
 				System.out.println("Mail: " + clienteRecuperado.getEmail());
-				System.out.println("Telefono: " + clienteRecuperado.getTelefono());
+				System.out.println("Teléfono: " + clienteRecuperado.getTelefono());
 				System.out.println("----------------------------------------");
 				clienteRecuperado.mostrarDomicilios();
 				clienteRecuperado.mostrarPedidos();
 			};
 		};
 
-	}}
+	}
+}
 

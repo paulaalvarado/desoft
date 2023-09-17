@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Domicilio {
+public class Domicilio extends BaseEntidad {
     private String calle;
     private int numero;
     private String localidad;

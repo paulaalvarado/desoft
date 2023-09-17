@@ -14,7 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Cliente {
+public class Cliente extends BaseEntidad {
     private String nombre;
     private String apellido;
     private String email;
@@ -54,12 +54,10 @@ public class Cliente {
         for (Pedido pedido : pedidos) {
             System.out.println("Fecha: " + pedido.getFecha() + ", Total: " + pedido.getTotal());
             int counter = 0;
-            for (DetallePedido detalle: pedido.getDetallePedido()){
+            for (DetallePedido detalle: pedido.getDetallePedidos()){
                 counter += 1;
                 System.out.println("Producto "+counter+": "+detalle.getProducto().getDenominacion()+"  cantidad: "+detalle.getCantidad()+"  subtotal: "+detalle.getSubtotal());
             }
         }
     }
-}
-
 }

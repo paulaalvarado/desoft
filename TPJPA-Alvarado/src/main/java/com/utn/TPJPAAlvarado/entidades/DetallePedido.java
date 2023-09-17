@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class DetallePedido {
+public class DetallePedido extends BaseEntidad {
     private int cantidad;
     private double subtotal;
 
