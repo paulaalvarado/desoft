@@ -1,4 +1,6 @@
 package com.utn.TPJPAAlvarado;
+//profes, al ejecutar me sale un error que no puedo solucionar. Estuve intentándolo pero no hay caso.
+//una disculpa, saludos.
 
 
 import com.utn.TPJPAAlvarado.entidades.*;
